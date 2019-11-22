@@ -1,0 +1,295 @@
+{
+  "stringresources": {
+    "strings": {
+      "string": [
+        {
+          "-id": "1",
+          "en": "en",
+          "de": "de",
+          "es": "es",
+          "fr": "fr",
+          "it": "it",
+          "br": "br",
+          "ru": "ru"
+        },
+        {
+          "-id": "LevelKey",
+          "en": "Level",
+          "de": "Level",
+          "es": "Nivel",
+          "fr": "Niveau",
+          "it": "Livello",
+          "br": "Nível",
+          "ru": "Уровень",
+          "nl": "Level",
+          "tr": "Seviye"
+        },
+        {
+          "-id": "GoalKey",
+          "en": "Goal",
+          "de": "Ziel",
+          "es": "Objetivo",
+          "fr": "But",
+          "it": "Scopo",
+          "br": "Objectivo",
+          "ru": "Цель",
+          "nl": "Doel",
+          "tr": "Hedef"
+        },
+        {
+          "-id": "goal_reachpointsKey",
+          "en": "Reach [X] points",
+          "de": "Sammle [X] Punkte",
+          "es": "Consigue [X] puntos",
+          "fr": "Marquez [X] points",
+          "it": "Raggiungi [X] punti",
+          "br": "Alcance [X] pontos",
+          "ru": "Получить [X] очков",
+          "nl": "Haal [X] punten",
+          "tr": "[X] puana ulaş"
+        },
+        {
+          "-id": "goal_intimeKey",
+          "en": "in limited time.",
+          "de": "innerhalb einer bestimmten Zeit.",
+          "es": "dentro del límite de tiempo.",
+          "fr": "en temps limité.",
+          "it": "in un tempo limitato.",
+          "br": "no prazo limitado.",
+          "ru": "в ограниченное время.",
+          "nl": "binnen beperkte tijd.",
+          "tr": "sınırlı zamanda."
+        },
+        {
+          "-id": "goal_maxValKey",
+          "en": "Reach target number",
+          "de": "Erreiche die Zahl",
+          "es": "Alcanza el número objetivo",
+          "fr": "Atteindre nombre cible",
+          "it": "Raggiungi il numero richiesto",
+          "br": "Alcançar número alvo",
+          "ru": "Получить желаемый номер",
+          "nl": "Haal doelgetal",
+          "tr": "Hedef sayıya ulaş"
+        },
+        {
+          "-id": "goal_limitmovesKey",
+          "en": "You have limited moves",
+          "de": "Du hast nur begrenzt viele Züge",
+          "es": "Tienes movimientos limitados",
+          "fr": "Vous avez un nombre de coups limité",
+          "it": "Hai mosse limitate",
+          "br": "Você tem movimentos limitados",
+          "ru": "У вас ограниченное количество ходов",
+          "nl": "Je hebt een beperkt aantal zetten",
+          "tr": "Sınırlı sayıda hamle hakkın var"
+        },
+        {
+          "-id": "goal_maxValTimeKey",
+          "en": "Time is running out! You have to reach your goal before it does!",
+          "de": "Die Zeit läuft aus! Du musst vorher dein Ziel erreichen!",
+          "es": "¡Se está acabando el tiempo! ¡Consigue el objetivo antes de que se agote!",
+          "fr": "Vous disposez d'un temps limité ! Vous devez réaliser votre objectif avant la fin du temps imparti !",
+          "it": "Il tempo sta per scadere! Devi raggiungere l'obiettivo prima che scada!",
+          "br": "O tempo está acabando! Você precisa alcançar sua meta antes que chegue!",
+          "ru": "Время заканчивается! Вы должны выполнить свою цель, прежде чем закончиться время!",
+          "nl": "De tijd is bijna om! Je moet je doel halen voordat het dat doet!",
+          "tr": "Zaman daralıyor! Süren bitmeden hedefine ulaşmalısın!"
+        },
+        {
+          "-id": "goal_puzzleKey",
+          "en": "Only one number can remain, clear the others.",
+          "de": "Nur eine Zahl darf übrig bleiben, beseitige die anderen.",
+          "es": "Solo puede quedar un número. Elimina los demás.",
+          "fr": "Un seul nombre peut rester, enlevez les autres.",
+          "it": "Può rimanere un solo numero, elimina gli altri.",
+          "br": "Só pode sobrar um número, limpe os outros.",
+          "ru": "Оставить только один номер, соединить все остальные.",
+          "nl": "Er kan maar één nummer overblijven, verwijder de andere.",
+          "tr": "Yalnızca bir sayı kalabilir, diğerlerini temizle."
+        },
+        {
+          "-id": "goal_collectionKey",
+          "en": "Collect required numbers",
+          "de": "Sammle die erforderliche Anzahl",
+          "es": "Obtén el número necesario",
+          "fr": "Récupérer nombre cible",
+          "it": "Ottieni il numero richiesto",
+          "br": "Recolher o número exigido",
+          "ru": "Соберите необходимые цифры",
+          "nl": "Verzamel vereiste nummers",
+          "tr": "İhtiyaç duyulan sayıları topla"
+        },
+        {
+          "-id": "goal_quickDecisionsKey",
+          "en": "Make quick decisions.",
+          "de": "Triff eine schnelle Entscheidung.",
+          "es": "Toma decisiones rápidas.",
+          "fr": "Prenez des décisions rapidement.",
+          "it": "Prendi una decisione rapida.",
+          "br": "Tome decisões rápidas.",
+          "ru": "Принимайте быстрые решения.",
+          "nl": "Maak snelle beslissingen",
+          "tr": "Kararlarını hızlıca ver"
+        },
+        {
+          "-id": "gameover_nocombination",
+          "en": "No possible\ncombinations",
+          "de": "Keine Kombinationen\nmöglich",
+          "es": "Ninguna combinación\nposible",
+          "fr": "Aucune combinaison\npossible",
+          "it": "Non ci sono\ncombinazioni possibili",
+          "br": "As combinações\nnão são possíveis",
+          "ru": "Нет возможных\nкомбинаций",
+          "nl": "Geen mogelijke\ncombinaties",
+          "tr": "Olası kombinasyon\nyok"
+        },
+        {
+          "-id": "gameover_notime",
+          "en": "Out of time!",
+          "de": "Keine Zeit mehr!",
+          "es": "¡Tiempo agotado!",
+          "fr": "Temps écoulé !",
+          "it": "Tempo scaduto!",
+          "br": "O tempo acabou",
+          "ru": "Время\nзакончилось!",
+          "nl": "Tijd is om!",
+          "tr": "Süre bitti!"
+        },
+        {
+          "-id": "gameover_nomoves",
+          "en": "Out of moves!",
+          "de": "Keine Züge mehr!",
+          "es": "¡Sin movimientos!",
+          "fr": "Plus aucun coup !",
+          "it": "Mosse scadute!",
+          "br": "Acabaram-se os movimentos",
+          "ru": "Нет ходов!",
+          "nl": "Geen zetten meer!",
+          "tr": "Hamle hakkın bitti!"
+        },
+        {
+          "-id": "gameover_win",
+          "en": "you win!",
+          "de": "Du hast\ngewonnen!",
+          "es": "¡Has ganado!",
+          "fr": "Vous avez\ngagné !",
+          "it": "Hai vinto!",
+          "br": "Você vence",
+          "ru": "ты победил!",
+          "nl": "jij wint!",
+          "tr": "kazandın!"
+        },
+        {
+          "-id": "getKey",
+          "en": "Get",
+          "de": "Erreiche",
+          "es": "Consigue",
+          "fr": "Obtenez",
+          "it": "Ottieni",
+          "br": "Obter",
+          "ru": "Заработать",
+          "nl": "Haal",
+          "tr": "Al"
+        },
+        {
+          "-id": "pause_win",
+          "en": "Pause",
+          "de": "Pause",
+          "es": "Pausado",
+          "fr": "Pause",
+          "it": "Pausa",
+          "br": "Pausa",
+          "ru": "Пауза",
+          "nl": "Pauzeer",
+          "tr": "Duraklat"
+        },
+        {
+          "-id": "TTC",
+          "en": "TAP TO CONTINUE",
+          "de": "Zum Fortfahren\nberühren",
+          "es": "Toca para continuar",
+          "fr": "Touchez pour\ncontinuer",
+          "it": "Tocca per continuare",
+          "br": "Toque para continuar",
+          "ru": "НАЖМИТЕ, ЧТОБЫ ПРОДОЛЖИТЬ",
+          "nl": "TIK OM VERDER TE GAAN",
+          "tr": "DEVAM ETMEK İÇİN DOKUN"
+        },
+        {
+          "-id": "instructionsKey",
+          "en": "Create the highest possible number by matching adjacent numbers of the same colour. The difficulty of the game increases with each new number created.",
+          "de": "Bilde die größtmögliche Zahl, indem du benachbarte Zahlen derselben Farbe kombinierst. Die Schwierigkeit des Spiels steigt mit jeder gebildeten Zahl.",
+          "es": "Crea el número más alto posible combinando números adyacentes del mismo color. La dificultad del juego incrementa con cada número que se crea.",
+          "fr": "Créez le nombre le plus élevé possible en combinant les nombres adjacents de même couleur. La difficulté du jeu augmente à chaque nouveau nombre créé.",
+          "it": "Ottieni il numero più alto possibile abbinando i numeri adiacenti corrispondenti dello stesso colore. La difficoltà del gioco aumenta con ogni nuovo numero creato.",
+          "br": "Crie o maior número possível, combinando números adjacentes da mesma cor. A dificuldade do jogo aumenta com cada novo número criado.",
+          "ru": "Составь самое большое число, какое сможешь, объединяя числа одного цвета. Сложность игры увеличивается с каждой созданной комбинацией.",
+          "nl": "Creëer een zo hoog mogelijk getal door aangrenzende nummers van dezelfde kleur met elkaar te matchen. De moeilijkheidsgraad van het spel neemt toe met elk nieuw nummer dat je maakt.",
+          "tr": "Birbirine yakın aynı renkteki sayıları birleştir ve mümkün olan en yüksek sayıyı oluştur. Her yeni bir sayı oluştukça oyun daha da zorlaşır."
+        },
+        {
+          "-id": "controlsKey",
+          "en": "Controls: Tap to select a group of the same numbers which you want to merge. Tap again to select where the higher number will be created. Tap other on screen icons for corresponding action (play, pause...).",
+          "de": "Steuerung: Tippe, um eine Gruppe derselben Farbe auszuwählen, die du vereinigen möchtest. Tippe erneut, um auszuwählen, wo die größere Zahl gebildet werden soll. Tippe andere Symbole auf dem Bildschirm an, um die entsprechende Aktion auszuführen (Spielen, Pause ...).",
+          "es": "Controles: Toca para seleccionar un grupo de números iguales que quieras combinar. Toca de nuevo para seleccionar dónde se creará el número más alto. Toca los demás iconos en pantalla para realizar la acción correspondiente (jugar, pausa, etc.).",
+          "fr": "Commandes : Touchez pour sélectionner un groupe de nombres identiques que vous souhaitez fusionner. Touchez à nouveau l'écran pour choisir là où sera créé le nombre plus élevé. Touchez les icônes à l'écran pour réaliser l'action correspondante (jouer, pause...).",
+          "it": "Comandi: tocca per selezionare un gruppo di numeri uguali che vuoi unire. Tocca di nuovo per selezionare la posizione in cui sarà creato il numero più alto. Tocca altre icone sullo schermo per eseguire le azioni corrispondenti (gioca o pausa...).",
+          "br": "Controles: Toque para selecionar um grupo dos mesmos números que deseja mesclar. Toque novamente para selecionar onde o número mais alto será criado. Toque em outros ícones na tela para a ação correspondente (reproduzir, pausar...).",
+          "ru": "Управление: коснись, чтобы выбрать группу одинаковых чисел и объединить их. Коснись снова, чтобы указать, где появится новое число. Другие игровые действия (играть, пауза...) вызываются касанием соответствующих значков на экране.",
+          "nl": "Bediening: tik om een groep gelijke nummers die je wilt samenvoegen te selecteren. Tik nogmaals om te selecteren waar het hogere nummer wordt gecreëerd. Tik op andere icoontjes op het scherm voor de bijbehorende actie (afspelen, pauze...).",
+          "tr": "Kontroller: Birleştirmek istediğim sayıları dokunarak seç ve oluşacak yeni sayının nerede oluşacağını seçmek için tekrar dokun. Başka bir eylem yapmak istersen, eyleme denk gelen ikona dokun."
+        },
+        {
+          "-id": "allCompleteKey",
+          "en": "Congratulations!\nYou have made it!",
+          "de": "Glückwunsch!\nGeschafft!",
+          "es": "¡Enhorabuena!\nLo has conseguido.",
+          "fr": "Félicitations !\nVous avez réussi !",
+          "it": "Complimenti!\nCe l'hai fatta!",
+          "br": "Parabéns!\nVocê conseguiu!",
+          "ru": "Поздравляем!\nВы сделали это!",
+          "nl": "Gefeliciteerd!\nJe hebt het gehaald!",
+          "tr": "Tebrikler!\nBaşardın!"
+        },
+
+        {
+          "-id": "tut_1_key",
+          "en": "First tap to select a set of numbers. Tap on any of the 1s in the middle.",
+          "de": "Tippe als Erstes, um eine Gruppe von Zahlen auszuwählen. Tippe auf eine der 1en in der Mitte.",
+          "es": "Primero, toca para seleccionar varios números. Después, toca cualquier 1 en el medio.",
+          "fr": "D'abord, touchez l'écran pour sélectionner un groupe de nombres. Touchez des 1 de votre choix au centre.",
+          "it": "Tocca per selezionare una serie di numeri. Tocca uno qualsiasi degli 1 nel mezzo.",
+          "br": "Primeiro, toque para selecionar um conjunto de números. Toque em qualquer 1 no meio.",
+          "ru": "Сначала нажмите, чтобы выбрать набор чисел. Нажмите на любую единицу в середине.",
+          "nl": "Tik eerst om een set getallen te selecteren. Tik op een willekeurige 1 in het midden.",
+          "tr": "İlk olarak seçmek için bir dizi sayıya dokun. Ortadaki 1lerden birine dokun."
+        },
+        {
+          "-id": "tut_2_key",
+          "en": "Tap again and they will combine in the position where you tap",
+          "de": "Tippe erneut, um die Krieger an der Stelle, auf die du tippst, zusammenzuführen.",
+          "es": "Vuelve a tocar y se combinarán en el lugar donde toques.",
+          "fr": "Touchez-les à nouveau et ils fusionneront là où vous avez touché l'écran.",
+          "it": "Tocca di nuovo e si uniranno nella posizione toccata.",
+          "br": "Toque novamente e eles vão se combinar na posição em que você tocar",
+          "ru": "Нажмите снова, и они будут объединены в том месте, где вы нажали.",
+          "nl": "Tik nogmaals en ze zullen op de plek waar je tikt samenvoegen",
+          "tr": "Tekrardan dokun, bu sayede dokunduğun yere sayıları kombine edecektir."
+        },
+        {
+          "-id": "tut_3_key",
+          "en": "All 1s combine to 2s. Seems easy? Then keep on playing and try to beat all the levels!",
+          "de": "Alle 1en kombinieren sich zu 2en. Sieht leicht aus? Dann spiel weiter und versuche, alle Levels zu schaffen!",
+          "es": "Todos los 1 se combinan para formar un 2. ¡Después sigue jugando e intenta superar todos los niveles!",
+          "fr": "Tous les 1 se combinent pour former un 2. Alors continuez à jouer et essayez de terminer tous les niveaux !",
+          "it": "Tutti gli 1 si sommano diventando 2. Quindi continua a giocare e prova a superare tutti i livelli!",
+          "br": "Todos os 1s combinam com 2s. Então continue jogando e tente vencer todos os níveis!",
+          "ru": "Все 1 объединяются в 2. это вам кажется легким? Попытайтесь получить самое высокое число.",
+          "nl": "Alle enen worden samen tweeën. Makkelijk? Speel dan verder en probeer alle levels af te maken!",
+          "tr": "Tüm 1ler, 2lerle kombine olur. Kolay mı geldi? O zaman oynamaya devam et ve tüm seviyeleri geç!"
+        }
+      ]
+    }
+  }
+}

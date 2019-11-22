@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stringresources>
+	<strings>
+		<string id="NULL">
+			<en></en>
+			<de></de>
+			<es></es>
+			<fr></fr>
+			<it></it>
+			<pt></pt>
+			<ru></ru>
+			<tr/>
+		</string>		
+		<string id="DRAW">
+			<en>Draw</en>
+			<de>Draw</de>
+			<es>Sacar</es>
+			<fr>Piocher</fr>
+			<it>Draw</it>
+			<pt>Empate</pt>
+			<ru>Домино</ru>
+			<tr/>
+		</string>
+		<string id="BLOCK">
+			<en>Block</en>
+			<de>Block</de>
+			<es>Bloquero</es>
+			<fr>Bloquer</fr>
+			<it>Block</it>
+			<pt>Bloqueio</pt>
+			<ru>Блок</ru>
+			<tr/>
+		</string>		
+		<string id="ROUND">
+			<en>Round</en>
+			<de>Runde</de>
+			<es>Ronda</es>
+			<fr>Round</fr>
+			<it>Round</it>
+			<pt>Rodada</pt>
+			<ru>Раунд</ru>
+			<tr/>
+		</string>		
+		<string id="BACKGROUND">
+			<en>Background</en>
+			<de>Hintergrund</de>
+			<es>Fondo</es>
+			<fr>Fond</fr>
+			<it>Sottofondo</it>
+			<pt>Fundo</pt>
+			<ru>Фон</ru>
+			<tr/>
+		</string>		
+		<string id="INSTRUCTIONS">
+			<en>Instructions</en>
+			<de>Anweisungen</de>
+			<es>Instrucciones</es>
+			<fr>Instructions</fr>
+			<it>Istruzioni</it>
+			<pt>Instruções</pt>
+			<ru>Инструкция</ru>
+			<tr/>
+		</string>		
+		<string id="ROUND">
+			<en>Round</en>
+			<de>Runde</de>
+			<es>Ronda</es>
+			<fr>Round</fr>
+			<it>Round</it>
+			<pt>Rodada</pt>
+			<ru>Раунд</ru>
+			<tr/>
+		</string>	
+		<string id="OPPONENT">
+			<en>Opponent</en>
+			<de>Gegner</de>
+			<es>Rival</es>
+			<fr>Adversaire</fr>
+			<it>Avversario</it>
+			<pt>Oponente</pt>
+			<ru>Противник</ru>
+			<tr/>
+		</string>	
+		<string id="YOU">
+			<en>You</en>
+			<de>Du</de>
+			<es>Si</es>
+			<fr>Vous</fr>
+			<it>Tu</it>
+			<pt>Você</pt>
+			<ru>Вы</ru>
+			<tr/>
+		</string>			
+		<string id="UNLOCKED">
+			<en>unlocked</en>
+			<de>freigeschaltet</de>
+			<es>desbloqueado</es>
+			<fr>déverrouillé</fr>
+			<it>sbloccato</it>
+			<pt>desbloqueado</pt>
+			<ru>pазблокировано</ru>
+			<tr/>
+		</string>
+		<string id="NO_MORE_MOVES_OPPONENT">
+			<en>Opponent has to draw from the boneyard.</en>
+			<de>Gegner muss vom Steinstapel ziehen.</de>
+			<es>El rival tiene que sacar del cementerio.</es>
+			<fr>L'adversaire doit piocher.</fr>
+			<it>L'avversario deve pescare dallo stock.</it>
+			<pt>O adversário tem que tirar do cemitério.</pt>
+			<ru>Противник должен взять кость из банка</ru>
+			<tr/>
+		</string>
+		<string id="NO_MORE_MOVES_PLAYER">
+			<en>No more moves. Draw from the boneyard.</en>
+			<de>Keine Züge mehr. Ziehe vom Steinstapel.</de>
+			<es>No quedan movimientos. Saca ficha del cementerio.</es>
+			<fr>Plus aucun coup possible. Vous devez piocher.</fr>
+			<it>Non puoi fare altre mosse. Pesca dallo stock.</it>
+			<pt>Acabaram-se os movimentos Tire do cemitério.</pt>
+			<ru>Нет больше ходов. Возьмите кость из банка</ru>
+			<tr/>
+		</string>
+		<string id="PASS_OPPONENT">
+			<en>Your opponent must pass.</en>
+			<de>Dein Gegner muss passen.</de>
+			<es>Tu rival tiene que pasar.</es>
+			<fr>Votre adversaire doit passer son tour.</fr>
+			<it>Il tuo avversario deve passare.</it>
+			<pt>Seu oponente deve passar.</pt>
+			<ru>Ваш противник должен пропустить ход</ru>
+			<tr/>
+		</string>
+		<string id="PASS_PLAYER">
+			<en>You must pass.</en>
+			<de>Du musst passen.</de>
+			<es>Tienes que pasar.</es>
+			<fr>Vous devez passer votre tour.</fr>
+			<it>Devi passare.</it>
+			<pt>Você deve passar.</pt>
+			<ru>Вы должны пропустить ход</ru>
+			<tr/>
+		</string>
+		<string id="DOMINO_WON">
+			<en>Domino! You won this round.</en>
+			<de>Domino! Du hast diese Runde gewonnen.</de>
+			<es>¡Domino! Ganas esta ronda.</es>
+			<fr>Domino ! Vous avez gagné ce round.</fr>
+			<it>Domino! Hai vinto questo turno.</it>
+			<pt>Dominó! Você ganhou esta rodada.</pt>
+			<ru>Домино! Вы выиграли в этом раунде.</ru>
+			<tr/>
+		</string>
+		<string id="DOMINO_LOST">
+			<en>Domino! You lost this round.</en>
+			<de>Domino! Du hast diese Runde verloren.</de>
+			<es>¡Domino! Pierdes esta ronda.</es>
+			<fr>Domino ! Vous avez perdu ce round.</fr>
+			<it>Domino! Hai perso questo turno.</it>
+			<pt>Dominó! Você perdeu essa rodada.</pt>
+			<ru>Домино! Вы проиграли в этом раунде.</ru>
+			<tr/>
+		</string>
+		<string id="NEXT_ROUND">
+			<en>Next Round</en>
+			<de>Nächste Runde</de>
+			<es>Siguiente ronda</es>
+			<fr>Round suivant</fr>
+			<it>Round successivo</it>
+			<pt>Próxima rodada</pt>
+			<ru>Следующий раунд</ru>
+			<tr/>
+		</string>
+		<string id="FIRST_PLAYER">
+			<en>The Player who scores 100 wins</en>
+			<de>Der Spieler mit 100 Punkten gewinnt</de>
+			<es>El jugador que consiga 100 puntos gana</es>
+			<fr>Le joueur qui marque 100 points gagne</fr>
+			<it>Vince il giocatore che segna 100 punti</it>
+			<pt>O jogador que pontuar 100 vence</pt>
+			<ru>Игрок, который набрал 100, победил</ru>
+			<tr/>
+		</string>					
+		<string id="BONUS100">
+			<en>Winning 100:0 nets you 1000</en>
+			<de>100:0 zu gewinnen, bringt dir 1000 ein</de>
+			<es>Si ganas 100:0, obtendrás 1000</es>
+			<fr>Gagner 100:0 vous rapporte 1000</fr>
+			<it>Vincendo 100:0 ottieni 1000</it>
+			<pt>Ganhar 100:0 lhe dá 1000</pt>
+			<ru>Победа 100:0 приносит вам 1000</ru>
+			<tr/>
+		</string>			
+		<string id="INSTR_COMMON">
+			<en>A round of domino is played until one player places all of their tiles or until the game is blocked and neither player can make a move. At the beginning the players receive 7 tiles and the one with higher double begins the game. If neither player got a double, then the player with the highest tile begins. The player who earns 100 points first wins.</en>
+			<de>Eine Runde Domino wird gespielt, bis ein Spieler alle seine Steine angelegt hat oder bis das Spiel einen Zustand erreicht, bei dem kein Spieler mehr anlegen kann. Am Spielbeginn erhalten die Spieler 7 Steine und der Spieler mit dem höchsten Doppelstein beginnt das Spiel. Falls kein Spieler einen Doppelstein hat, beginnt der Spieler mit dem höchsten Stein. Es gewinnt der Spieler, der als Erster 100 Punkte gesammelt hat.</de>
+			<es>La ronda de dominó dura hasta que un jugador coloque todas las fichas o hasta que el juego quede bloqueado y ningún jugador pueda realizar ningún movimiento. Al comienzo de la partida, cada jugador obtiene 7 fichas. El que tenga el doble más alto comienza la partida. Si ninguno tiene un doble, comienza el jugador con la ficha más alta. El jugador que consiga 100 puntos primero, gana.</es>
+			<fr>Un round de domino dure jusqu'à ce qu'un joueur place toutes ses tuiles ou jusqu'à ce que la partie soit bloquée et qu'aucun joueur ne puisse jouer. Au début, les joueurs reçoivent 7 tuiles et celui avec le double le plus élevé commence la partie. Si aucun joueur n'a de double, alors le joueur avec la tuile la plus haute commence. Le joueur qui marque 100 points en premier gagne.</fr>
+			<it>Un round di domino termina quando un giocatore piazza tutte le tessere o quando il gioco è in stallo e nessuno può fare una mossa. All'inizio i giocatori ricevono 7 tessere e quello con il doppio più alto inizia. Se nessun giocatore ha un doppio, inizia il giocatore con la tessera di valore più alto. Vince il giocatore che per primo raggiunge 100 punti.</it>
+			<pt>Uma rodada de dominó é jogada até que um jogador coloque todas as suas peças ou até que o jogo seja bloqueado e nenhum jogador possa fazer um movimento. No começo, os jogadores recebem 7 peças e quem tiver a maior dupla começa o jogo. Se nenhum dos jogadores tiver uma dupla o jogador com a peça de número mais alto começa. O jogador que ganhar 100 pontos primeiro vence.</pt>
+			<ru>Партия в домино играется до тех пор, пока один игрок не выложит все свои кости или пока игра не будет заблокирована, и ни один из игроков не сможет сделать ход. Сначала игроки получают по 7 костей и игра начинается с самого высокого дубля. Если  у игроков нет дублей, начинает игрок с самой высокой кости. Игрок, который зарабатывает 100 очков первым, выигрывает.</ru>
+			<tr/>
+		</string>	
+		<string id="INSTR_DRAW">
+			<en>If a player cannot make a move, they need to pick tiles from boneyard until they pick a suitable tile with which they can play further.</en>
+			<de>Falls ein Spieler keinen Stein anlegen kann, muss er Steine vom Steinstapel nehmen, bis er einen Stein findet, den er anlegen kann.</de>
+			<es>Si un jugador no puede realizar ningún movimiento, tendrá que coger fichas del cementerio hasta que salga una con la que pueda jugar.</es>
+			<fr>Si un joueur ne peut pas jouer, il doit piocher des tuiles jusqu'à ce qu'il obtienne une tuile appropriée avec laquelle il pourra continuer à jouer.</fr>
+			<it>Se un giocatore non può fare una mossa, deve pescare le tessere dall'ossario fino a trovarne una con cui proseguire.</it>
+			<pt>Se um jogador não pode fazer um movimento, ele precisa pegar as pedras do banco de peças até achar uma peça adequada com a qual possa jogar mais.</pt>
+			<ru>Если игрок не может сделать ход, ему нужно выбрать кость с базара, пока не найдёт подходящую кость, с которой можно продолжить игру дальше.</ru>
+			<tr/>
+		</string>
+		<string id="INSTR_BLOCK">
+			<en>If a player cannot make a move, they have to pass the turn to the other player. If neither can make a move, the numbers on the tiles in each player´s hands add up and the one with smaller number wins the round</en>
+			<de>Falls ein Spieler keinen Stein anlegen kann, übergibt er den Zug an den anderen Spieler. Falls kein Spieler mehr einen Stein anlegen kann, werden die Zahlen auf den Steinen in den Händen der Spieler addiert und der Spieler mit der kleineren Summe gewinnt die Runde.</de>
+			<es>Si un jugador no puede realizar ningún movimiento, el turno pasa al otro jugador. Si ninguno de los dos puede realizar ningún movimiento, los valores de las fichas de las manos de cada jugador se suman y el que tenga la cifra más baja gana la ronda.</es>
+			<fr>Si un joueur ne peut pas jouer, il doit passer son tour. Si aucun joueur ne peut jouer, les nombres des tuiles que les joueurs ont en main sont additionnés et celui qui a le plus petit nombre gagne la partie.</fr>
+			<it>Se un giocatore non può fare una mossa, deve passare il turno all'altro giocatore. Se nessuno può fare una mossa, i numeri sulle tessere in mano a ogni giocatore si sommano e quello con il totale più basso vince la partita.</it>
+			<pt>Se um jogador não pode fazer um movimento, ele tem que passar a vez para o outro jogador. Se nenhum dos dois puder fazer um movimento, os números nas peças nas mãos de cada jogador serão somados e aquele com número menor ganhará a rodada.</pt>
+			<ru>Если у игрока нет кости для хода, он должен передать ход другому игроку. Если ни один из них не может сделать ход, то числа на костях, которые на руках каждого игрока складываются, и игрок с меньшим счётом выигрывает раунд</ru>
+			<tr/>
+		</string>		
+
+		<string id="WIN">
+			<en>Win</en>
+			<de>Gewonnen</de>
+			<es>Victoria</es>
+			<fr>Victoire</fr>
+			<it>Vittoria</it>
+			<pt>Vitória</pt>
+			<ru>Победа</ru>
+			<tr/>
+		</string>
+		<string id="YOU_WIN">
+			<en>You win</en>
+			<de>Gewonnen</de>
+			<es>Ganas</es>
+			<fr>Vous avez gagné</fr>
+			<it>Hai vinto</it>
+			<pt>Você vence</pt>
+			<ru>Ты победил</ru>
+			<tr/>
+		</string>	
+		<string id="YOU_LOSE">
+			<en>You Lose</en>
+			<de>Du hast verloren</de>
+			<es>Pierdes</es>
+			<fr>Vous avez perdu</fr>
+			<it>Hai perso</it>
+			<pt>Você perde</pt>
+			<ru>Ты проиграл</ru>
+			<tr/>
+		</string>	
+		<string id="BONUS">
+			<en>Bonus</en>
+			<de>Bonus</de>
+			<es>Bonificación</es>
+			<fr>Bonus</fr>
+			<it>Bonus</it>
+			<pt>Bônus</pt>
+			<ru>Бонус</ru>
+			<tr/>
+		</string>		
+		<string id="SCORE">
+			<en>Score</en>
+			<de>Punkte</de>
+			<es>Puntuación</es>
+			<fr>Score</fr>
+			<it>Punteggio</it>
+			<pt>Pontuação</pt>
+			<ru>Cчет</ru>
+		</string>	
+		<string id="CONTINUE">
+			<en>Continue</en>
+			<de>Weiter</de>
+			<es>Continuar</es>
+			<fr>Continuer</fr>
+			<it>Continuare</it>
+			<pt>Continuar</pt>
+			<ru>Продолжить</ru>
+		</string>
+		<string id="MENU">
+			<en>Menu</en>
+			<de>Menü</de>
+			<es>Menú</es>
+			<fr>Menu</fr>
+			<it>Menu</it>
+			<pt>Menu</pt>
+			<ru>Mеню</ru>
+		</string>
+		<string id="RESTART">
+			<en>Restart</en>
+			<de>Neustarten</de>
+			<es>Reiniciar</es>
+			<fr>Recommencer</fr>
+			<it>Riavvia</it>
+			<pt>Reiniciar</pt>
+			<ru>Запустить снова</ru>
+		</string>		
+		<string id="YES">
+			<en>Yes</en>
+			<de>Ja</de>
+			<es>Sí</es>
+			<fr>Oui</fr>
+			<it>Sì</it>
+			<pt>Sim</pt>
+			<ru>Да</ru>
+		</string>		
+		<string id="NO">
+			<en>No</en>
+			<de>Nein</de>
+			<es>No</es>
+			<fr>Non</fr>
+			<it>No</it>
+			<pt>Não</pt>
+			<ru>Нет</ru>
+		</string>				
+		<string id="UNLOCKED">
+			<en>unlocked</en>
+			<de>freigeschaltet</de>
+			<es>desbloqueado</es>
+			<fr>déverrouillé</fr>
+			<it>sbloccato</it>
+			<pt>desbloqueada</pt>
+			<ru>pазблокировано</ru>
+		</string>	
+		<string id="ARE_YOU_SURE">
+			<en>Are you sure?</en>
+			<de>Sicher?</de>
+			<es>¿Seguro?</es>
+			<fr>Vous êtes sûr(e)?</fr>
+			<it>Confermi?</it>
+			<pt>Tem certeza?</pt>
+			<ru>Уверены ли вы?</ru>
+		</string>
+		<string id="RESTART_ARE_YOU_SURE">
+			<en>THIS WILL ERASE ALL\nYOUR PROGRESS.\n\nARE YOU SURE?</en>
+			<de>DEIN GESAMTER FORTSCHRITT\nWIRD GELÖSCHT.\n\nBIST DU SICHER?</de>
+			<es>SE BORRARÁ TODO\nTU PROGRESO.\n\n¿SEGURO?</es>
+			<fr>CELA EFFACERA TOUTE VOTRE\n PROGRESSION DANS LE JEU.\n\nCONFIRMER?</fr>
+			<it>TUTTI I TUOI PROGRESSI\nSARANNO CANCELLATI.\n\nSEI SICURO?</it>
+			<pt>ISTO APAGARÁ TODO\nO SEU PROGRESSO.\n\nTEM CERTEZA?</pt>
+			<ru>ВЫ УДАЛИТЕ ПОЛНОСТЬЮ\nВАШ ПРОГРЕСС.\nВЫ УВЕРЕНЫ?</ru>
+		</string>		
+		<string id="NEW_GAME">
+			<en>New game</en>
+			<de>Neues Spiel</de>
+			<es>Nueva partida</es>
+			<fr>Nouvelle partie</fr>
+			<it>Nuova partita</it>
+			<pt>Novo jogo</pt>
+			<ru>Новая игра</ru>
+		</string>
+		<string id="CONTINUE_SAVED">
+			<en>Continue with your\nprevious game</en>
+			<de>Spiel fortsetzen</de>
+			<es>Continuar con la\npartida anterior</es>
+			<fr>Reprendre votre\npartie précédente</fr>
+			<it>Continuare l\npartita precedente</it>
+			<pt>Continuar com\njogo anterior</pt>
+			<ru>Продолжить\nпредыдущую игру</ru>
+		</string>			
+	</strings>
+</stringresources>
