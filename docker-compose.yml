@@ -1,7 +1,7 @@
 nginx:
   build: image/
   ports:
-    - "8086:80"
+    - "8086:8080"
   volumes:
     - ./www/:/www-data/
   restart: always

@@ -1,4 +1,7 @@
-FROM alpine:3.4
+FROM alpine:3.10
+
+ENV http_proxy=http://10.72.28.4:31080\
+    https_proxy=http://10.72.28.4:31080
 
 RUN apk add --update nginx && rm -rf /var/cache/apk/*
 

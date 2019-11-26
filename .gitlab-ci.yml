@@ -1,0 +1,13 @@
+image: statgames/nginx
+
+stages:
+  - statgames
+
+copy games:
+  stage: statgames
+  only:
+    changes:
+    - www/*
+    - .gitlab-ci.yml
+  script:
+  - cp -a $CI_PROJECT_DIR/www/ /www-data/test/
