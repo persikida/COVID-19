@@ -9,5 +9,6 @@ copy games:
     changes:
     - www/*
     - .gitlab-ci.yml
-  script:
-  - cp -a $CI_PROJECT_DIR/www/ /www-data/test/
+#  script:
+#  - mkdir
+#  - cp -a $CI_PROJECT_DIR/www/ /www-data/test/
