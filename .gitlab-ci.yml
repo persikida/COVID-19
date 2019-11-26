@@ -3,12 +3,19 @@ image: registry.services.mts.ru/docker/nginx/nginx-alpine:1.17.2
 stages:
   - statgames
 
-copy games:
+build statg:
   stage: statgames
   only:
     changes:
-    - www/*
-    - .gitlab-ci.yml
+      - www/*
+    #- .gitlab-ci.yml
+    refs:
+      - test-branch
+      - develop
+  artifacts:
+    paths:
+      - $CI_PROJECT_DIR/build
+      expire_in: 1 day
 #  script:
 #  - mkdir
 #  - cp -a $CI_PROJECT_DIR/www/ /www-data/test/
