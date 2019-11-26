@@ -14,8 +14,8 @@ build statg:
       - develop
   artifacts:
     paths:
-      - $CI_PROJECT_DIR/build
-      expire_in: 1 day
-#  script:
-#  - mkdir
-#  - cp -a $CI_PROJECT_DIR/www/ /www-data/test/
+    - $CI_PROJECT_DIR/build
+    expire_in: 1 day
+  script:
+  - mkdir /www-data/
+  - cp -a $CI_PROJECT_DIR/www/* /www-data/
