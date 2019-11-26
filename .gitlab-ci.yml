@@ -1,4 +1,4 @@
-image: registry.services.mts.ru/docker/nginx.nginx-alpine:1.17.2
+image: registry.services.mts.ru/docker/nginx/nginx-alpine:1.17.2
 
 stages:
   - statgames
