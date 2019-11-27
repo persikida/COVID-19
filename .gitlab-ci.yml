@@ -9,13 +9,12 @@ build statg:
     changes:
       - www/*
     #- .gitlab-ci.yml
-    #refs:
-    #  - test-branch
-      # - develop
-#  artifacts:
-#    paths:
-#    - $CI_PROJECT_DIR/build
-#    expire_in: 1 day
+    refs:
+      - test-branch
+      - develop
+  artifacts:
+    paths:
+    - $CI_PROJECT_DIR/build
+    expire_in: 1 day
   script:
-  - mkdir /www-data/
   - cp -a $CI_PROJECT_DIR/www/* /www-data/
