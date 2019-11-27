@@ -9,9 +9,9 @@ build statg:
     changes:
       - www/*
     #- .gitlab-ci.yml
-    refs:
-      - test-branch
-      - develop
+    #refs:
+    #  - test-branch
+      # - develop
   artifacts:
     paths:
     - $CI_PROJECT_DIR/build
