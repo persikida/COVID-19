@@ -17,4 +17,7 @@ build statg:
     - $CI_PROJECT_DIR/build
     expire_in: 1 day
   script:
+  - cp -a $CI_PROJECT_DIR/nginx.conf /etc/nginx/nginx.conf
+  - mkdir /www-data
   - cp -a $CI_PROJECT_DIR/www/* /www-data/
+  - nginx -s reload
