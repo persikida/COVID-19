@@ -29,7 +29,7 @@ image statg:
       - test-branch
       - develop
   before_script:
-    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}"
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
   script:
     - executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/image/dockerfile --destination $CI_REGISTRY_IMAGE:statgames-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA
   dependencies:
