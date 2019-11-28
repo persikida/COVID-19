@@ -6,8 +6,8 @@ build statg:
   stage: build
   image: registry.services.mts.ru/docker/nginx/nginx-alpine:1.17.2
   only:
-    changes:
-      - www/*
+    #changes:
+    #  - www/*
     #- .gitlab-ci.yml
     refs:
       - test-branch
