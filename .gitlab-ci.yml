@@ -30,4 +30,4 @@ image statg:
   before_script:
     - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}"
   script:
-    - echo ls -lah $CI_PROJECT_DIR/build
+    - ls -lah $CI_PROJECT_DIR/build
