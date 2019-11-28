@@ -12,14 +12,14 @@ build statg:
     refs:
       - test-branch
       - develop
-  artifacts:
-    paths:
-    - $CI_PROJECT_DIR/build
-    expire_in: 1 day
   script:
   - cp -a $CI_PROJECT_DIR/image/nginx.conf /etc/nginx/nginx.conf
   - mkdir /www-data
   - cp -a $CI_PROJECT_DIR/www/* /www-data/
+  artifacts:
+    paths:
+    - $CI_PROJECT_DIR/build
+    expire_in: 1 day
 
 image statg:
   stage: image
@@ -32,5 +32,3 @@ image statg:
     - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
   script:
     - executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/image/dockerfile --destination $CI_REGISTRY_IMAGE:statgames-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA
-  dependencies:
-    - build statg
