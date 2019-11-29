@@ -3,7 +3,7 @@ stages:
   - deploy
   - undo
 
-image statg:
+image statgames:
   stage: image
   image: registry.services.mts.ru/docker-ingame/kaniko:debug-v0.14.0
   only:
@@ -15,7 +15,7 @@ image statg:
   script:
     - executor --context $CI_PROJECT_DIR/ --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:statgames-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA
 
-deploy statg:
+deploy statgames:
   stage: deploy
   image: lachlanevenson/k8s-kubectl:latest
   extends: .deploy_dev
@@ -35,8 +35,8 @@ deploy statg:
     - kubectl --record deployment.apps/statgames set image deployment.v1.apps/statgames statgames=$CI_REGISTRY_IMAGE:statgames-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA -n development
     - kubectl -n development delete $(kubectl -n development get pod -o name -l app=statgames | grep statgames)
 
-undo statg:
-  stage: undo 
+undo statgames:
+  stage: undo
   image: lachlanevenson/k8s-kubectl:latest
   extends: .deploy_dev
   stage: undo
