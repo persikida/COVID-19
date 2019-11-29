@@ -1,26 +1,7 @@
 stages:
-  - build
   - image
-
-build statg:
-  stage: build
-  image: registry.services.mts.ru/docker/nginx/nginx-alpine:1.17.2
-  before_script:
-    - mkdir -p /build
-    - mkdir -p /build/www-data/
-  only:
-    changes:
-      - www/*
-      - .gitlab-ci.yml
-    refs:
-      - test-branch
-      - develop
-  script:
-    - cp -a $CI_PROJECT_DIR/www/* /www-data/
-  artifacts:
-    paths:
-    - $CI_PROJECT_DIR/build
-    expire_in: 1 day
+  - deploy
+  - undo
 
 image statg:
   stage: image
@@ -32,6 +13,48 @@ image statg:
   before_script:
     - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
   script:
-    - executor --context $CI_PROJECT_DIR/image/ --dockerfile $CI_PROJECT_DIR/image/dockerfile --destination $CI_REGISTRY_IMAGE:statgames-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA
-  dependencies:
-    - build statg
+    - executor --context $CI_PROJECT_DIR/image/ --dockerfile $CI_PROJECT_DIR/image/Dockerfile --destination $CI_REGISTRY_IMAGE:statgames-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA
+
+deploy statg:
+  stage: deploy
+  image: lachlanevenson/k8s-kubectl:latest
+  extends: .deploy_dev
+  environment:
+    name: statgames
+  stage: deploy
+  when: on_success
+  only:
+    refs:
+      - test-build
+      - develop
+  except:
+    changes:
+      - '*.md'
+      - .gitlab-ci.yml
+  script:
+    - kubectl --record deployment.apps/statgames set image deployment.v1.apps/statgames statgames=$CI_REGISTRY_IMAGE:statgames-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA -n statgames
+    - kubectl -n statgames delete $(kubectl -n statgames get pod -o name -l app=statgames | grep statgames)
+
+undo statg:
+  stage: undo 
+  image: lachlanevenson/k8s-kubectl:latest
+  extends: .deploy_dev
+  stage: undo
+  when: manual
+  only:
+    refs:
+      - test-branch
+      - develop
+  except:
+    changes:
+      - '*.md'
+      - .gitlab-ci.yml
+  script:
+    - kubectl rollout undo deployment.apps/statgames -n statgames
+
+.deploy_dev:
+  variables:
+    KUBECONFIG: /etc/deploy/config
+  before_script:
+    - mkdir -p /etc/deploy
+    - echo ${KUBE_CONFIG_DEV} | base64 -d > ${KUBECONFIG}
