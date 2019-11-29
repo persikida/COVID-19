@@ -13,7 +13,6 @@ image static games:
   image: registry.services.mts.ru/docker-ingame/kaniko:debug-v0.14.0
   only:
     refs:
-      - test-branch
       - develop
   except:
     changes:
@@ -32,7 +31,6 @@ deploy static games:
   when: on_success
   only:
     refs:
-      - test-build
       - develop
   except:
     changes:
@@ -50,7 +48,6 @@ undo static games:
   when: manual
   only:
     refs:
-      - test-branch
       - develop
   except:
     changes:
