@@ -5,6 +5,6 @@ RUN mkdir /www-data
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY www/* /www-data/
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD ["nginx"]

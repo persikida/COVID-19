@@ -1,7 +1,0 @@
-nginx:
-  build: /
-  ports:
-    - "8086:8080"
-  volumes:
-    - ./www/:/www-data/
-  restart: always
