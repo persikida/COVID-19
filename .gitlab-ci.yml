@@ -14,6 +14,7 @@ image static games:
   only:
     refs:
       - develop
+      - test-build
   except:
     changes:
       - '*.md'
@@ -32,6 +33,7 @@ deploy static games:
   only:
     refs:
       - develop
+      - test-build
   except:
     changes:
       - '*.md'
@@ -49,6 +51,7 @@ undo static games:
   only:
     refs:
       - develop
+      - test-build
   except:
     changes:
       - '*.md'
