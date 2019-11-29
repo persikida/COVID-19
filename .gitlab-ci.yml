@@ -6,10 +6,7 @@ build statg:
   stage: build
   image: registry.services.mts.ru/docker/nginx/nginx-alpine:1.17.2
   before_script:
-    - mkdir -p www-data
     - mkdir -p build
-    - ls -lah
-    - cp -a $CI_PROJECT_DIR/image/nginx.conf /etc/nginx/nginx.conf
   only:
     changes:
       - www/*
@@ -18,7 +15,7 @@ build statg:
       - test-branch
       - develop
   script:
-    - mv $CI_PROJECT_DIR/www/* /www-data/
+    - cp -a $CI_PROJECT_DIR/www/* /www-data/
   artifacts:
     paths:
     - $CI_PROJECT_DIR/build
