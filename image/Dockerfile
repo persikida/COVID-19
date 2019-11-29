@@ -5,9 +5,10 @@ ENV http_proxy=http://10.72.28.4:31080\
 
 RUN apk add --update nginx && rm -rf /var/cache/apk/*
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-
 RUN mkdir /www-data
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY ../www/* /www-data/
 
 EXPOSE 80
 
