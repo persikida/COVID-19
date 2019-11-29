@@ -32,8 +32,8 @@ deploy statg:
       - '*.md'
       - .gitlab-ci.yml
   script:
-    - kubectl --record deployment.apps/statgames set image deployment.v1.apps/statgames statgames=$CI_REGISTRY_IMAGE:statgames-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA -n statgames
-    - kubectl -n statgames delete $(kubectl -n statgames get pod -o name -l app=statgames | grep statgames)
+    - kubectl --record deployment.apps/statgames set image deployment.v1.apps/statgames statgames=$CI_REGISTRY_IMAGE:statgames-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA -n development
+    - kubectl -n development delete $(kubectl -n development get pod -o name -l app=statgames | grep statgames)
 
 undo statg:
   stage: undo 
@@ -50,7 +50,7 @@ undo statg:
       - '*.md'
       - .gitlab-ci.yml
   script:
-    - kubectl rollout undo deployment.apps/statgames -n statgames
+    - kubectl rollout undo deployment.apps/statgames -n development
 
 .deploy_dev:
   variables:
