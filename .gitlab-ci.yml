@@ -1,0 +1,57 @@
+include:
+  - project: 'ingame/ci-templates'
+    ref: master
+    file: 'templates/deploy-k8s.yaml'
+
+stages:
+  - image
+  - deploy
+  - undo
+
+image static games:
+  stage: image
+  image: registry.services.mts.ru/docker-ingame/kaniko:debug-v0.14.0
+  only:
+    refs:
+      - develop
+  except:
+    changes:
+      - '*.md'
+      - .gitlab-ci.yml
+  before_script:
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+  script:
+    - executor --context $CI_PROJECT_DIR/ --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA
+
+deploy static games:
+  stage: deploy
+  image: lachlanevenson/k8s-kubectl:latest
+  extends: .deploy_dev
+  stage: deploy
+  when: on_success
+  only:
+    refs:
+      - develop
+  except:
+    changes:
+      - '*.md'
+      - .gitlab-ci.yml
+  script:
+    - kubectl --record deployment.apps/games set image deployment.v1.apps/games games=$CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA -n development
+    - kubectl -n development delete $(kubectl -n development get pod -o name -l app=games | grep games)
+
+undo static games:
+  stage: undo
+  image: lachlanevenson/k8s-kubectl:latest
+  extends: .deploy_dev
+  stage: undo
+  when: manual
+  only:
+    refs:
+      - develop
+  except:
+    changes:
+      - '*.md'
+      - .gitlab-ci.yml
+  script:
+    - kubectl rollout undo deployment.apps/games -n development
