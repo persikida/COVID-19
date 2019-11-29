@@ -1,4 +1,4 @@
-FROM registry.services.mts.ru/docker/nginx:1.17.3-alpine
+FROM nginx:latest
 
 RUN mkdir /www-data
 
