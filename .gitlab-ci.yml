@@ -17,7 +17,7 @@ build statg:
       - test-branch
       - develop
   script:
-    - cp -a $CI_PROJECT_DIR/www/* /www-data/
+    - cp -R $CI_PROJECT_DIR/www/* /www-data/
   artifacts:
     paths:
     - $CI_PROJECT_DIR/build
