@@ -51,7 +51,7 @@ image static games prod:
   before_script:
     - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
   script:
-    - executor --context $CI_PROJECT_DIR/ --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME-tag-$CI_COMMIT_TAG
+    - executor --context $CI_PROJECT_DIR/ --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME
 
 deploy static games dev:
   stage: deploy
@@ -101,7 +101,7 @@ deploy static games prod:
       - '*.md'
       - .gitlab-ci.yml
   script:
-    - kubectl --record deployment.apps/games set image deployment.v1.apps/games games=$CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME-tag-$CI_COMMIT_TAG -n ingame-prod
+    - kubectl --record deployment.apps/games set image deployment.v1.apps/games games=$CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME -n ingame-prod
     - kubectl -n ingame-prod delete $(kubectl -n ingame-prod get pod -o name -l app=games | grep games)
 
 undo static games dev:
