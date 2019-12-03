@@ -44,10 +44,6 @@ image static games prod:
   image: registry.services.mts.ru/docker-ingame/kaniko:debug-v0.14.0
   only:
     - tags
-  except:
-    changes:
-      - '*.md'
-      - .gitlab-ci.yml
   before_script:
     - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
   script:
@@ -96,10 +92,6 @@ deploy static games prod:
   when: on_success
   only:
     - tags
-  except:
-    changes:
-      - '*.md'
-      - .gitlab-ci.yml
   script:
     - kubectl --record deployment.apps/games set image deployment.v1.apps/games games=$CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME -n ingame-prod
     - kubectl -n ingame-prod delete $(kubectl -n ingame-prod get pod -o name -l app=games | grep games)
@@ -145,9 +137,5 @@ undo static games prod:
   when: manual
   only:
     - tags
-  except:
-    changes:
-      - '*.md'
-      - .gitlab-ci.yml
   script:
     - kubectl rollout undo deployment.apps/games -n ingame-prod
