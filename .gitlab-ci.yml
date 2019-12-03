@@ -8,12 +8,28 @@ stages:
   - deploy
   - undo
 
-image static games:
+image static games dev:
   stage: image
   image: registry.services.mts.ru/docker-ingame/kaniko:debug-v0.14.0
   only:
     refs:
       - develop
+      - test-build
+  except:
+    changes:
+      - '*.md'
+      # - .gitlab-ci.yml
+  before_script:
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+  script:
+    - executor --context $CI_PROJECT_DIR/ --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA
+
+image static games stage:
+  stage: image
+  image: registry.services.mts.ru/docker-ingame/kaniko:debug-v0.14.0
+  only:
+    refs:
+      - master
   except:
     changes:
       - '*.md'
@@ -23,7 +39,21 @@ image static games:
   script:
     - executor --context $CI_PROJECT_DIR/ --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA
 
-deploy static games:
+image static games prod:
+  stage: image
+  image: registry.services.mts.ru/docker-ingame/kaniko:debug-v0.14.0
+  only:
+    - tags
+  except:
+    changes:
+      - '*.md'
+      - .gitlab-ci.yml
+  before_script:
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+  script:
+    - executor --context $CI_PROJECT_DIR/ --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME
+
+deploy static games dev:
   stage: deploy
   image: lachlanevenson/k8s-kubectl:latest
   extends: .deploy_dev
@@ -32,15 +62,49 @@ deploy static games:
   only:
     refs:
       - develop
+      - test-build
+  except:
+    changes:
+      - '*.md'
+      # - .gitlab-ci.yml
+  script:
+    - kubectl --record deployment.apps/games set image deployment.v1.apps/games games=$CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA -n development
+    - kubectl -n development delete $(kubectl -n development get pod -o name -l app=games | grep games)
+
+deploy static games stage:
+  stage: deploy
+  image: lachlanevenson/k8s-kubectl:latest
+  extends: .deploy_stage
+  stage: deploy
+  when: on_success
+  only:
+    refs:
+      - master
   except:
     changes:
       - '*.md'
       - .gitlab-ci.yml
   script:
-    - kubectl --record deployment.apps/games set image deployment.v1.apps/games games=$CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA -n development
-    - kubectl -n development delete $(kubectl -n development get pod -o name -l app=games | grep games)
+    - kubectl --record deployment.apps/games set image deployment.v1.apps/games games=$CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA -n ingame-stage
+    - kubectl -n ingame-stage delete $(kubectl -n ingame-stage get pod -o name -l app=games | grep games)
 
-undo static games:
+deploy static games prod:
+  stage: deploy
+  image: lachlanevenson/k8s-kubectl:latest
+  extends: .deploy_prod
+  stage: deploy
+  when: on_success
+  only:
+    - tags
+  except:
+    changes:
+      - '*.md'
+      - .gitlab-ci.yml
+  script:
+    - kubectl --record deployment.apps/games set image deployment.v1.apps/games games=$CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME -n ingame-prod
+    - kubectl -n ingame-prod delete $(kubectl -n ingame-prod get pod -o name -l app=games | grep games)
+
+undo static games dev:
   stage: undo
   image: lachlanevenson/k8s-kubectl:latest
   extends: .deploy_dev
@@ -49,9 +113,41 @@ undo static games:
   only:
     refs:
       - develop
+      - test-build
+  except:
+    changes:
+      - '*.md'
+      # - .gitlab-ci.yml
+  script:
+    - kubectl rollout undo deployment.apps/games -n development
+
+undo static games stage:
+  stage: undo
+  image: lachlanevenson/k8s-kubectl:latest
+  extends: .deploy_stage
+  stage: undo
+  when: manual
+  only:
+    refs:
+      - master
   except:
     changes:
       - '*.md'
       - .gitlab-ci.yml
   script:
-    - kubectl rollout undo deployment.apps/games -n development
+    - kubectl rollout undo deployment.apps/games -n ingame-stage
+
+undo static games prod:
+  stage: undo
+  image: lachlanevenson/k8s-kubectl:latest
+  extends: .deploy_prod
+  stage: undo
+  when: manual
+  only:
+    - tags
+  except:
+    changes:
+      - '*.md'
+      - .gitlab-ci.yml
+  script:
+    - kubectl rollout undo deployment.apps/games -n ingame-prod
