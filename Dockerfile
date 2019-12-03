@@ -13,6 +13,7 @@ FROM registry.services.mts.ru/docker/nginx/nginx-alpine:1.17.2
 ENV TZ 'Europe/Moscow'
 COPY --from=builder /etc/localtime /etc/localtime
 RUN echo $TZ > /etc/timezone
+
 COPY www/ /var/www/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 #EXPOSE 80
