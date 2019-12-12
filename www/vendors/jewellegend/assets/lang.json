@@ -1,0 +1,463 @@
+{
+  "stringresources": {
+    "strings": {
+      "string": [
+        {
+          "-id": "1",
+          "en": "en",
+          "de": "de",
+          "es": "es",
+          "fr": "fr",
+          "it": "it",
+          "br": "br",
+          "ru": "ru"
+        },
+        {
+          "-id": "PlayKey",
+          "en": "PLAY",
+          "fr": "Jouer",
+          "de": "Spielen",
+          "es": "Jugar",
+          "br": "Jogar",
+          "it": "Gioca",
+          "ru": "ИГРАТЬ"
+        },
+        {
+          "-id": "TargetKey",
+          "en": "Target",
+          "fr": "But",
+          "de": "Ziel",
+          "es": "Objetivo",
+          "br": "Meta",
+          "it": "Obiettivo",
+          "ru": "Цель"
+        },
+        {
+          "-id": "MovesKey",
+          "en": "Moves",
+          "fr": "Mouvements",
+          "de": "Züge",
+          "es": "Movimientos",
+          "br": "Moves",
+          "it": "Mosse",
+          "ru": "Ходов"
+        },
+        {
+          "-id": "TimeKey",
+          "en": "Time",
+          "fr": "Temps",
+          "de": "Zeit",
+          "es": "Tiempo",
+          "br": "Hora",
+          "it": "Tempo",
+          "ru": "Время"
+        },
+        {
+          "-id": "ContinueKey",
+          "en": "Continue",
+          "fr": "Continuer",
+          "de": "Fortsetzen",
+          "es": "Continuar",
+          "br": "Continuar",
+          "it": "Continua",
+          "ru": "Продолжить"
+        },
+        {
+          "-id": "QuitLevelKey",
+          "en": "Quit level",
+          "fr": "Quitter le niveau",
+          "de": "Level beenden",
+          "es": "Salir del nivel",
+          "br": "Sair do nível",
+          "it": "Esci dal livello",
+          "ru": "Покинуть уровень"
+        },
+        {
+          "-id": "InstructionsTitleKey",
+          "en": "Instructions",
+          "fr": "Instructions",
+          "de": "Anleitung",
+          "es": "Instrucciones",
+          "br": "Instruções",
+          "it": "Istruzioni",
+          "ru": "Инструкция"
+        },
+        {
+          "-id": "LevelFailedKey",
+          "en": "You have failed",
+          "fr": "Vous avez échoué",
+          "de": "Du bist gescheitert",
+          "es": "Has fracasado",
+          "br": "Você não",
+          "it": "Non ce l'hai fatta",
+          "ru": "Вы проиграли"
+        },
+        {
+          "-id": "YourScoreKey",
+          "en": "Your score",
+          "fr": "Votre score",
+          "de": "Deine Punktzahl",
+          "es": "Tu puntuación",
+          "br": "Sua pontuação",
+          "it": "Il tuo punteggio",
+          "ru": "Ваш счет"
+        },
+        {
+          "-id": "RetryKey",
+          "en": "Retry",
+          "fr": "Réessayer",
+          "de": "Neuer\n  Versuch  ",
+          "es": "Volver\n a intentar ",
+          "br": "Tentar\nnovamente",
+          "it": "Riprova",
+          "ru": "Повторить"
+        },
+        {
+          "-id": "NextKey",
+          "en": "Next",
+          "fr": "Suivant",
+          "de": "Weiter",
+          "es": "Siguiente",
+          "br": "Avançar",
+          "it": "Avanti",
+          "ru": "Следующий"
+        },
+        {
+          "-id": "CongratulationsKey",
+          "en": "Congratulations",
+          "fr": "Félicitations",
+          "de": "Glückwünsch",
+          "es": "Enhorabuena",
+          "br": "Parabéns",
+          "it": "Complimenti",
+          "ru": "Поздравляем"
+        },
+        {
+          "-id": "AboutTitleKey",
+          "en": "About",
+          "de": "Info",
+          "fr": "À propos",
+          "br": "Sobre",
+          "es": "Información",
+          "it": "Info",
+          "ru": "Об игре"
+        },
+        {
+          "-id": "RestartKey",
+          "en": "Restart",
+          "de": "Neustart",
+          "fr": "Recommencer",
+          "br": "Reiniciar",
+          "es": "Reiniciar",
+          "it": "Riavvia",
+          "ru": "Запустить снова"
+        },
+        {
+          "-id": "LevelKey",
+          "en": "Level",
+          "fr": "Niveau",
+          "de": "Stufe",
+          "es": "Nivel",
+          "br": "Nível",
+          "it": "Livello",
+          "ru": "Уровень"
+        },
+        {
+          "-id": "ScoreKey",
+          "en": "Score",
+          "de": "Punkte",
+          "fr": "Score",
+          "br": "Pontuação",
+          "es": "Puntuación",
+          "it": "Punteggio",
+          "ru": "Счет"
+        },
+        {
+          "-id": "BestKey",
+          "en": "Your best:",
+          "de": "Deine Bestleistung:",
+          "fr": "Votre meilleur score:",
+          "br": "O teu melhor:",
+          "es": "Tu mejor puntuación:",
+          "it": "Record:",
+          "ru": "Ваш лучший счет:"
+        },
+        {
+          "-id": "GET",
+          "en": "Get",
+          "de": "Erreiche",
+          "es": "Consigue",
+          "fr": "Obtenez",
+          "it": "Ottieni",
+          "br": "Obter",
+          "ru": "Получить"
+        },
+        {
+          "-id": "BRING",
+          "en": "Bring",
+          "de": "Bringe",
+          "es": "Haz descender",
+          "fr": "Faire descendre",
+          "it": "Abbatti",
+          "br": "Traga",
+          "ru": "Опустить"
+        },
+        {
+          "-id": "CATCH",
+          "en": "Catch",
+          "de": "Fange",
+          "es": "Coge",
+          "fr": "Attraper",
+          "it": "Prendi",
+          "br": "Pegue",
+          "ru": "Поймать"
+        },
+        {
+          "-id": "POINTS",
+          "en": "points",
+          "de": "punkte",
+          "es": "puntos",
+          "fr": "points",
+          "it": "punti",
+          "br": "pontos",
+          "ru": "очков"
+        },
+        {
+          "-id": "GOAL_BLOCK",
+          "en": "Break all the blocks",
+          "de": "Platze alle blöcke",
+          "es": "Estalla todos los bloques",
+          "fr": "Briser tous les blocs",
+          "it": "Rompi tutti i blocchi",
+          "br": "Quebrar todos os blocos",
+          "ru": "Разбейте все блоки"
+        },
+        {
+          "-id": "DownfallDownKey",
+          "en": "lanterns down.",
+          "de": "Laternen nach unten.",
+          "es": "faroles.",
+          "fr": "lanternes.",
+          "it": "lanterne.",
+          "br": "lanternas",
+          "ru": "фонари вниз."
+        },
+        {
+          "-id": "EscKey",
+          "en": "flying orbs.",
+          "de": "fliegende Kugeln.",
+          "es": "orbes voladores.",
+          "fr": "boules volantes.",
+          "it": "sfere volanti.",
+          "br": "esferas voadoras",
+          "ru": "летающие шары."
+        },
+
+        {
+          "-id": "WithinKey",
+          "en": "within",
+          "fr": "en",
+          "de": "und das in",
+          "es": "dentro de",
+          "it": "entro",
+          "br": "em",
+          "ru": "за"
+        },
+        {
+          "-id": "SecondsKey",
+          "en": "seconds",
+          "fr": "secondes",
+          "de": "sekunden",
+          "es": "segundos",
+          "it": "secondi",
+          "br": "segundos",
+          "ru": "секунд"
+        },
+        {
+          "-id": "PauseKey",
+          "en": "Pause",
+          "fr": "Pause",
+          "de": "Pause",
+          "es": "Pausado",
+          "it": "Pausa",
+          "br": "Pausa",
+          "ru": "Пауза"
+        },
+
+        {
+          "-id": "AimKey",
+          "en": "Aim:",
+          "de": "Ziel:",
+          "es": "Objetivo:",
+          "fr": "Objectif:",
+          "it": "Obiettivo:",
+          "br": "Objetivo:",
+          "ru": "Цель:"
+        },
+        {
+          "-id": "Aim2Key",
+          "en": "Swap and match colourful diamonds to form chains of 3 or more of the same colour. You will be rewarded with explosive power-ups if you match 4 or more.",
+          "de": "Vertausche und kombiniere bunte Diamanten, um Ketten aus 3 oder mehr gleichfarbigen zu bilden. Du wirst mit explosiven Power-ups belohnt, wenn du 4 oder mehr kombinierst.",
+          "es": "Intercambia y combina coloridos diamantes para formar cadenas de 3 o más del mismo color. Si consigues combinar 4 o más, recibirás potenciadores explosivos como recompensa.",
+          "fr": "Permutez et associez les diamants colorés pour former des chaînes de 3 ou plus de même couleur. Vous recevrez des bonus explosifs si vous en associez 4 ou plus.",
+          "it": "Sposta e abbina i diamanti colorati per formare catene di 3 o più dello stesso colore. Se ne abbini almeno 4, riceverai potenziamenti esplosivi come ricompensa!",
+          "br": "Permute e corresponda diamantes coloridos para formar cadeias de 3 ou mais da mesma cor. Você será recompensado com power-ups explosivos se combinar 4 ou mais.",
+          "ru": "Меняйте местами разноцветные алмазы и соединяйте их в цепочку по 3 и более одинакового цвета. Вы будете вознаграждены взрывными усилениями, если вы соберете цепочку из 4 или более алмазов."
+        },
+        {
+          "-id": "ControlsKey",
+          "en": "Controls:",
+          "de": "Steuerung:",
+          "es": "Controles:",
+          "fr": "Commandes:",
+          "it": "Comandi:",
+          "br": "Controles:",
+          "ru": "Как управлять:"
+        },
+        {
+          "-id": "Controls2Key",
+          "en": "To select, tap the desired diamond and swipe towards the one you want to swap it with. Tap other onscreen icons for corresponding action (play, pause, hint...).",
+          "de": "Tippe einen Diamanten an, um ihn auszuwählen, und schiebe ihn in Richtung des Diamanten, mit dem du ihn vertauschen möchtest. Tippe andere Symbole auf dem Bildschirm an, um die entsprechende Aktion auszuführen (Spielen, Pause, Hinweis ...).",
+          "es": "Para seleccionar, toca el diamante que desees y desliza el dedo hacia el diamante con el que quieres intercambiarlo. Toca los iconos en pantalla para realizar la acción correspondiente (jugar, pausa, pista, etc.).",
+          "fr": "Pour sélectionner, touchez le diamant désiré et faites glisser votre doigt vers celui avec lequel vous voulez le permuter. Touchez les icônes à l'écran pour réaliser l'action correspondante (jouer, pause, indice...).",
+          "it": "Per selezionare, tocca il diamante desiderato e scorri verso quello con cui vuoi scambiarlo. Tocca le altre icone sullo schermo per eseguire l'azione corrispondente (gioca, pausa, suggerimento...).",
+          "br": "Para selecionar, toque no diamante desejado e deslize em direção àquela que quer trocar. Toque em outros ícones na tela para a ação correspondente (reprodução, pausa, dica,...).",
+          "ru": "Чтобы поменять местами алмазы нужно коснуться нужного алмаза и провести пальцем к тому, с которым вы хотите обменяться местами. Используйте другие значки на экране для выполнения соответствующих действий (воспроизведение, пауза, подсказка ...)."
+        },
+        {
+          "-id": "BoostExtraMoveKey",
+          "en": "Extra Swap",
+          "de": "Extratausch",
+          "es": "Intercambio adicional",
+          "fr": "Échange supplémentaire",
+          "it": "Scambio extra",
+          "br": "Permuta extra",
+          "ru": "Экстра-замена"
+        },
+        {
+          "-id": "BoostExtraMove2Key",
+          "en": "Swap any two objects without losing a move.",
+          "de": "Tausche zwei beliebige Objekte, ohne einen Zug zu verlieren.",
+          "es": "Intercambia dos objetos sin perder un movimiento.",
+          "fr": "Échangez deux objets de votre choix sans perdre de coup.",
+          "it": "Scambia due oggetti qualsiasi senza perdere una mossa.",
+          "br": "Permute dois objetos sem perder um movimento.",
+          "ru": "Поменяете местами любые два объекта, не теряя ход."
+        },
+        {
+          "-id": "BoostPinKey",
+          "en": "Pick-Axe",
+          "de": "Spitzhacke",
+          "es": "Pico",
+          "fr": "Pioche",
+          "it": "Piccone",
+          "br": "Picareta",
+          "ru": "Кирка"
+        },
+        {
+          "-id": "BoostPin2Key",
+          "en": "Removes any diamond, including the block beneath.",
+          "de": "Entfernt einen beliebigen Diamanten, einschließlich des Blocks darunter.",
+          "es": "Elimina cualquier diamante, incluido el bloque de debajo.",
+          "fr": "Enlève n'importe quel diamant, y compris le bloc en-dessous.",
+          "it": "Rimuovi i diamanti, incluso il blocco sottostante.",
+          "br": "Remove qualquer diamente, inclusive o bloco inferior",
+          "ru": "Разобьете любой алмаз, включая блок под ним."
+        },
+        {
+          "-id": "BoostSlingKey",
+          "en": "Minecart",
+          "de": "Lore",
+          "es": "Carro",
+          "fr": "Chariot de mine",
+          "it": "Carrello da miniera",
+          "br": "Carrinho de mina",
+          "ru": "Тележка"
+        },
+        {
+          "-id": "BoostSling2Key",
+          "en": "The minecart targets and removes a few random diamonds.",
+          "de": "Die Lore entfernt ein paar zufällige Diamanten.",
+          "es": "El carro elimina varios diamantes al azar.",
+          "fr": "Le chariot de mine cible et retire quelques diamants aléatoires.",
+          "it": "Il carrello da miniera prende di mira e rimuove dei diamanti a caso.",
+          "br": "O carrinho de mina tem como alvo e remove alguns diamantes aleatórios.",
+          "ru": "Минная тележка удаляет несколько случайных алмазов."
+        },
+
+        {
+          "-id": "RewardKey",
+          "en": "Reward",
+          "fr": "Récompense",
+          "de": "Belohnung",
+          "es": "Recompensa",
+          "it": "Ricompensa",
+          "br": "Recompensa",
+          "ru": "НАГРАДА"
+        },
+        {
+          "-id": "NewRecordKey",
+          "en": "New Record",
+          "fr": "Nouveau Record",
+          "de": "Neuer Rekord",
+          "es": "Nuevo Récord",
+          "it": "Nuovo Record",
+          "br": "Novo recorde!",
+          "ru": "Новый рекорд"
+        },
+
+        {
+          "-id": "QuitGameKey",
+          "en": "Quit game?",
+          "fr": "Quitter le jeu ?",
+          "de": "Spiel beenden?",
+          "es": "¿Salir del juego?",
+          "it": "Uscire dal gioco?",
+          "br": "Sair do jogo?",
+          "ru": "Покинуть игру?"
+        },
+        {
+          "-id": "YesQuitKey",
+          "en": "Yes, Quit",
+          "fr": "Oui, quitter",
+          "de": "Ja, aufgeben",
+          "es": "Sí, salir",
+          "it": "Sì, voglio uscire",
+          "br": "Sim, sair",
+          "ru": "Да, выйти"
+        },
+        {
+          "-id": "KeepPlayingKey",
+          "en": "Keep Playing",
+          "fr": "Continuer à jouer",
+          "de": "Weiterspielen",
+          "es": "Seguir jugando",
+          "it": "Continua a giocare",
+          "br": "Continuar jogando",
+          "ru": "Продолжить играть"
+        },
+
+        {
+          "-id": "LevelsKey",
+          "en": "Levels",
+          "fr": "Niveaux",
+          "de": "Levels",
+          "es": "Niveles",
+          "it": "Livelli",
+          "br": "Níveis",
+          "ru": "Уровни"
+        },
+        {
+          "-id": "GoalKey",
+          "en": "Goal",
+          "fr": "But",
+          "de": "Ziel",
+          "es": "Objetivo",
+          "it": "Scopo",
+          "br": "Objectivo",
+          "ru": "Цель"
+        }
+      ]
+    }
+  }
+}

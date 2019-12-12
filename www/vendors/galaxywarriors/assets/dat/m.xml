@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stringresources>
+    <languages>
+        <language>en</language>
+        <language>es</language>
+        <language>de</language>
+        <language>it</language>
+        <language>fr</language>
+        <language>ru</language>
+        <language>pt</language>
+    </languages>
+    <strings>
+        <string id="1" index="0">
+            <en>en</en>
+            <es>es</es>
+            <de>de</de>
+            <it>it</it>
+            <fr>fr</fr>
+            <ru>ru</ru>
+            <pt>pt</pt>
+        </string>
+        <string id="2" index="1">
+            <en>EXIT?</en>
+            <sk>KONIEC?</sk>
+            <es>¿FINAL?</es>
+            <de>ENDE?</de>
+            <it>FINE?</it>
+            <fr>QUITTER?</fr>
+            <ru>ВЫХОД?</ru>
+            <pt>FECHAR?</pt>
+            <tr/>
+        </string>
+        <string id="3" index="2">
+            <en>ENABLE MUSIC?</en>
+            <sk>ZAPNÚŤ HUDBU?</sk>
+            <es>¿ACTIVAR MÚSICA?</es>
+            <de>MUSIK AKTIVIEREN?</de>
+            <it>ABILITARE MUSICA?</it>
+            <fr>ACTIVER LA MUSIQUE?</fr>
+            <ru>ВКЛЮЧИТЬ МУЗЫКУ?</ru>
+            <pt>LIGAR MÚSICA?</pt>
+            <tr/>
+        </string>
+        <string id="4" index="3">
+            <en>YES</en>
+            <sk>ÁNO</sk>
+            <es>SÍ</es>
+            <de>JA</de>
+            <it>SÌ</it>
+            <fr>OUI</fr>
+            <ru>ДА</ru>
+            <pt>SIM</pt>
+            <tr/>
+        </string>
+        <string id="5" index="4">
+            <en>NO</en>
+            <sk>NIE</sk>
+            <es>NO</es>
+            
+            <de>NEIN</de>
+            <it>NO</it>
+            <fr>NON</fr>
+            <ru>Нет</ru>
+            <pt>NÃO</pt>
+            <tr/>
+        </string>
+        <string id="6" index="5">
+            <en>PLAY</en>
+            <sk/>
+            <es>JUGAR</es>
+            
+            <de>SPIELEN</de>
+            <it>GIOCA</it>
+            <fr>JOUER</fr>
+            <ru/>
+            <pt>JOGAR</pt>
+            <tr/>
+        </string>
+        <string id="7" index="6">
+            <en>SETTINGS</en>
+            <sk/>
+            <es>AJUSTES</es>
+            
+            <de>EINSTELLUNGEN</de>
+            <it>IMPOSTAZIONI</it>
+            <fr>PARAMÈTRES</fr>
+            <ru/>
+            <pt>DEFINIÇÕES</pt>
+            <tr/>
+        </string>
+        <string id="INSTRUCTIONS" index="7">
+            <en>INSTRUCTIONS</en>
+            <es>INSTRUCCIONES</es>
+            <de>ANWEISUNGEN</de>
+            <it>ISTRUZIONI</it>
+            <fr>INSTRUCTIONS</fr>
+            <ru>ИНСТРУКЦИИ</ru>
+            <pt>INSTRUÇÕES</pt>
+        </string>
+        <string id="9" index="8">
+            <en>ABOUT</en>
+            <sk/>
+            <es>INFORMACIÓN</es>
+            
+            <de>INFO</de>
+            <it>INFO</it>
+            <fr>À PROPOS</fr>
+            <ru/>
+            <pt>ACERCA DE</pt>
+            <tr/>
+        </string>
+        <string id="10" index="9">
+            <en>MORE GAMES</en>
+            <sk/>
+            <es>MÁS JUEGOS</es>
+            
+            <de>WEITERE SPIELE</de>
+            <it>ALTRI GIOCHI</it>
+            <fr>PLUS DE JEUX</fr>
+            <ru/>
+            <pt>MAIS JOGOS</pt>
+            <tr/>
+        </string>
+        <string id="LEVEL" index="17">
+            <en>LEVEL</en>
+            <es>NIVEL</es>
+            <de>LEVEL</de>
+            <it>LIVELLO</it>
+            <fr>NIVEAU</fr>
+            <pt>NÍVEL</pt>
+            <ru>УРОВЕНЬ</ru>
+        </string>
+
+        <string id="ARMOR" index="90">
+            <en>Armor</en>
+            <de>Panzerung</de>
+            <es>Blindaje</es>
+            <fr>Blindage</fr>
+            <it>Corazza</it>
+            <pt>Blindagem</pt>
+            <ru>Защита</ru>
+        </string>
+
+        <string id="FRONT_GUN" index="91">
+            <en>Front gun</en>
+            <de>Frontwaffe</de>
+            <es>Metralleta delantera</es>
+            <fr>Pistolet avant</fr>
+            <it>Pistola frontale</it>
+            <pt>Arma dianteira</pt>
+            <ru>Оружие спереди</ru>
+        </string>
+
+        <string id="DRONES" index="92">
+            <en>Drones</en>
+            <de>Drohnen</de>
+            <es>Drones</es>
+            <fr>Drones</fr>
+            <it>Droni</it>
+            <pt>Drones</pt>
+            <ru>Дроны</ru>
+        </string>
+
+        <string id="MAGNET" index="93">
+            <en>Magnet</en>
+            <de>Magnet</de>
+            <es>Imán</es>
+            <fr>Aimant</fr>
+            <it>Magnete</it>
+            <pt>Magnético</pt>
+            <ru>Магнит</ru>
+        </string>
+
+        <string id="SHIELD" index="94">
+            <en>Shield</en>
+            <de>Schild</de>
+            <es>Escudo</es>
+            <fr>Bouclier</fr>
+            <it>Scudo</it>
+            <pt>Escudo</pt>
+            <ru>Щит</ru>
+        </string>
+
+        <string id="LASER" index="95">
+            <en>Laser</en>
+            <de>Laser</de>
+            <es>Laser</es>
+            <fr>Laser</fr>
+            <it>Laser</it>
+            <pt>Laser</pt>
+            <ru>Лазер</ru>
+        </string>
+
+        <string id="DESC_ARMOR" index="96">
+            <en>Endure more damage</en>
+            <de>Du kannst mehr Schaden einstecken</de>
+            <es>Aguanta más daño</es>
+            <fr>Encaisse plus de dégâts</fr>
+            <it>Resiste a più danni</it>
+            <pt>Suportar mais danos</pt>
+            <ru>Выдержит больше урона</ru>
+        </string>
+
+        <string id="DESC_FRONT_GUN" index="97">
+            <en>Stronger front shooting</en>
+            <de>Du kannst stärker nach vorn schießen</de>
+            <es>Disparos frontales más potentes</es>
+            <fr>Tirs avant plus puissants</fr>
+            <it>Sparo frontale più potente</it>
+            <pt>Tiro frontal mais forte</pt>
+            <ru>Сильнее стрельба спереди</ru>
+        </string>
+
+        <string id="DESC_DRONES" index="98">
+            <en>Stronger side shots</en>
+            <de>Stärke Schüsse zu den Seiten</de>
+            <es>Disparos laterales más potentes</es>
+            <fr>Tirs latéraux plus puissants</fr>
+            <it>Spari laterali più potenti</it>
+            <pt>Tiros laterais mais fortes</pt>
+            <ru>Сильнее стрельба с бокового оружия</ru>
+        </string>
+
+        <string id="DESC_MAGNET" index="99">
+            <en>Longer lasting cash pulling</en>
+            <de>Länger andauernder Geldsog</de>
+            <es>Atrae el vehículo durante más tiempo</es>
+            <fr>Retrait d'argent plus long</fr>
+            <it>Il magnete per il denaro dura di più</it>
+            <pt>Dinheiro mais duradouro</pt>
+            <ru>Дольше собирает деньги</ru>
+        </string>
+
+        <string id="DESC_SHIELD" index="100">
+            <en>Longer lasting invulnerability</en>
+            <de>Länger andauernde Unverwundbarkeit</de>
+            <es>Invulnerabilidad más duradera</es>
+            <fr>Invulnérabilité plus durable</fr>
+            <it>L'invulnerabilità dura di più</it>
+            <pt>Invulnerabilidade mais duradoura</pt>
+            <ru>Более длительная неуязвимость</ru>
+        </string>
+
+        <string id="DESC_LASER" index="101">
+            <en>Longer lasting laser gun</en>
+            <de>Länger schießendes Lasergeschütz</de>
+            <es>El láser dura más</es>
+            <fr>Pistolet laser plus long</fr>
+            <it>La pistola laser dura di più</it>
+            <pt>Pistola laser mais duradoura</pt>
+            <ru>Более продолжительная работа лазерной пушк</ru>
+        </string>
+
+        <string id="INSTR" index="101">
+            <en>Hold your finger on the screen\n and swipe left and right\n to move your spaceship.</en>
+            <de>Halt deinen Finger auf den Bildschirm\n und wische nach links und rechts, \num dein Raumschiff zu bewegen.</de>
+            <es>Mantén el dedo en la pantalla\ny deslízalo a la izquierda y derecha\npara que la nave espacial se desplace.</es>
+            <fr>Maintenez votre doigt appuyé sur\n l'écran et balayez à gauche et à droite\n pour déplacer votre vaisseau spatial.</fr>
+            <it>Tieni il dito sullo schermo e scorri\nverso sinistra e destra per\n spostare la tua astronave.</it>
+            <pt>Mantenha seu dedo na tela e deslize\n para a esquerda e para a direita\n para mover a espaçonave.</pt>
+            <ru>Держите палец на экране\nи водите пальцем влево и вправо,\nчтобы перемещать ваш\nкосмический корабль.</ru>
+            <tr>Uzay geminizi sola ve sağa hareket ettirmek için parmağınızı ekrana dokunun ve sola veya sağa kaydırın.</tr>
+
+        </string>
+
+        <string id="GMOVR_WAVES" index="95">
+            <en>Waves cleared</en>
+            <de>Besiegte Wellen</de>
+            <es>Hordas eliminadas</es>
+            <fr>Vagues supprimées</fr>
+            <it>Ondate completate</it>
+            <pt>Ondas eliminadas</pt>
+            <ru>Волн разбито</ru>
+        </string>
+
+        <string id="GMOVR_INTERCEPTORS" index="95">
+            <en>Interceptors down</en>
+            <de>Zerstörte Abfangjäger</de>
+            <es>Interceptores derribados</es>
+            <fr>Intercepteurs éliminés</fr>
+            <it>Intercettori distrutti</it>
+            <pt>Interceptores derrubados</pt>
+            <ru>Разбито перехватчиков</ru>
+        </string>
+
+        <string id="GMOVR_STARSHIPS" index="95">
+            <en>Starships down</en>
+            <de>Zerstörte Raumschiffe</de>
+            <es>Naves derribadas</es>
+            <fr>Vaisseaux détruits</fr>
+            <it>Astronavi distrutte</it>
+            <pt>Espaçonaves derrubadas</pt>
+            <ru>Разбито звездолетов</ru>
+        </string>
+
+        <string id="GMOVR_BOSSES" index="95">
+            <en>Bosses down</en>
+            <de>Ausgeschaltete Bosse</de>
+            <es>Jefes vencidos</es>
+            <fr>Boss abattus</fr>
+            <it>Boss giù</it>
+            <pt>Chefes derrotados</pt>
+            <ru>Убитых боссов</ru>
+        </string>
+
+        <string id="GMOVR_TOTAL" index="95">
+            <en>Total</en>
+            <de>Gesamt</de>
+            <es>Total</es>
+            <fr>Total</fr>
+            <it>Totale</it>
+            <pt>Total</pt>
+            <ru>Итог</ru>
+        </string>
+
+        <string id="PAUSE" index="95">
+            <en>PAUSE</en>
+            <de>PAUSE</de>
+            <es>PAUSA</es>
+            <fr>PAUSE</fr>
+            <it>PAUSA</it>
+            <pt>PAUSA</pt>
+            <ru>ПАУЗА</ru>
+        </string>
+
+        <string id="WAVE_COMPLETED" index="95">
+            <en>Wave completed</en>
+            <de>Welle abgeschlossen</de>
+            <es>Horda eliminada</es>
+            <fr>Vague terminée</fr>
+            <it>Ondata completata</it>
+            <pt>Onda concluída</pt>
+            <ru>Волна пройдена</ru>
+        </string>
+
+        <string id="ASTEROIDS" index="95">
+            <en>Asteroids\nincoming</en>
+            <de>Asteroiden\nim Anflug</de>
+            <es>Se aproximan\nasteroides</es>
+            <fr>Astéroïdes\nen approche</fr>
+            <it>Asteroidi\nin arrivo</it>
+            <pt>Asteroides\nchegando</pt>
+            <ru>Астероиды\nприближаются</ru>
+        </string>
+
+    </strings>
+</stringresources>
