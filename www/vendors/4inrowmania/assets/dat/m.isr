@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stringresources>
+	<strings>
+		<string id="NULL">
+			<en></en>
+			<de></de>
+			<es></es>
+			<fr></fr>
+			<it></it>
+			<pt></pt>
+			<ru></ru>
+			<tr/>
+		</string>		
+		<string id="INSTR_COMMON">
+			<en>Two players (or player vs CPU) take turns, dropping one piece of their colour into a desired column. The first one to achieve a horizontal, vertical or diagonal row of four wins.</en>
+			<de>Zwei Spieler (oder Spieler gegen CPU) lassen abwechselnd einen Stein ihrer Farbe in die gewünschte Spalte fallen. Der Erste, der eine horizontale, vertikale oder diagonale Reihe aus vier Steinen erreicht, gewinnt.</de>
+			<es>Dos jugadores (o un jugador y la CPU) deben introducir fichas de colores en el tablero por turnos. Gana el primero en alinear cuatro fichas del mismo color en sentido horizontal, vertical o diagonal.</es>
+			<fr>Deux joueurs (ou un joueur contre l'ordinateur) se relaient, déposant un pion de leur couleur dans la colonne souhaitée. Le premier à réaliser une rangée horizontale, verticale ou en diagonale de quatre pions l'emporte.</fr>
+			<it>Due giocatori (o giocatore vs IA) si alternano, facendo cadere una pedina del loro colore nella colonna desiderata. Vince il primo che ne mette in fila quattro in orizzontale, verticale o diagonale.</it>
+			<pt>Dois jogadores (ou jogador vs CPU) se revezam, soltando uma peça de sua cor em uma coluna desejada. Vence o primeiro a conseguir uma linha horizontal, vertical ou diagonal de quatro peças.</pt>
+			<ru>Два игрока (или игрок и компьютер) по очереди опускают фишку своего цвета в столбец игрового поля по своему выбору. Выигрывает тот, кто первым выставит четыре фишки в ряд – по горизонтали, вертикали или диагонали.</ru>
+			<tr>İki oyuncu (veya oyuncu bilgisayara karşı) sırayla oynarlar, kendi renklerindeki bir parçayı istenilen sütuna bırakırlar. Dikey, yatay veya çapraz dörtlüye ulaşan kazanır.</tr>
+		</string>
+		<string id="PAUSE">
+			<en>PAUSE</en>
+			<de>PAUSE</de>
+			<es>PAUSA</es>
+			<fr>PAUSE</fr>
+			<it>PAUSA</it>
+			<pt>PAUSA</pt>
+			<ru>ПАУЗА</ru>
+			<tr>DURAKLAT</tr>
+		</string>
+	</strings>
+</stringresources>
