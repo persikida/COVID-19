@@ -44,10 +44,10 @@ image static games prod:
   image: registry.services.mts.ru/docker-ingame/kaniko:debug-v0.14.0
   only:
     - tags
-  except:
-    changes:
-      - '*.md'
-      - .gitlab-ci.yml
+  #except:
+  #  changes:
+  #    - '*.md'
+  #    - .gitlab-ci.yml
   before_script:
     - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
   script:
@@ -96,10 +96,10 @@ deploy static games prod:
   when: on_success
   only:
     - tags
-  except:
-    changes:
-      - '*.md'
-      - .gitlab-ci.yml
+  #except:
+  #  changes:
+  #    - '*.md'
+  #    - .gitlab-ci.yml
   script:
     - kubectl --record deployment.apps/games set image deployment.v1.apps/games games=$CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME -n ingame-prod
     - kubectl -n ingame-prod rollout restart deployment/games
