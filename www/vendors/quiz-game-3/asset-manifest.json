@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "./static/css/main.1377dc42.chunk.css",
+    "main.js": "./static/js/main.0d20c2de.chunk.js",
+    "main.js.map": "./static/js/main.0d20c2de.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.e9d5e30d.js",
+    "runtime-main.js.map": "./static/js/runtime-main.e9d5e30d.js.map",
+    "static/js/2.73568dda.chunk.js": "./static/js/2.73568dda.chunk.js",
+    "static/js/2.73568dda.chunk.js.map": "./static/js/2.73568dda.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.60dd9cb2075a12f137fd6d047431320f.js": "./precache-manifest.60dd9cb2075a12f137fd6d047431320f.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.1377dc42.chunk.css.map": "./static/css/main.1377dc42.chunk.css.map",
+    "static/js/2.73568dda.chunk.js.LICENSE": "./static/js/2.73568dda.chunk.js.LICENSE",
+    "static/media/Dited.otf": "./static/media/Dited.f1422591.otf",
+    "static/media/Montserrat-Regular.ttf": "./static/media/Montserrat-Regular.ee653992.ttf",
+    "static/media/logo.png": "./static/media/logo.6d9bfb01.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e9d5e30d.js",
+    "static/js/2.73568dda.chunk.js",
+    "static/css/main.1377dc42.chunk.css",
+    "static/js/main.0d20c2de.chunk.js"
+  ]
+}
