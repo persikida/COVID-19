@@ -19,7 +19,7 @@ image static games dev:
   except:
     changes:
       - '*.md'
-      - .gitlab-ci.yml
+      #- .gitlab-ci.yml
   before_script:
     - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
   script:
