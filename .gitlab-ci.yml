@@ -19,7 +19,7 @@ image static games dev:
   except:
     changes:
       - '*.md'
-      # - .gitlab-ci.yml
+      - .gitlab-ci.yml
   before_script:
     - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
   script:
@@ -34,7 +34,7 @@ image static games stage:
   except:
     changes:
       - '*.md'
-      - .gitlab-ci.yml
+      #- .gitlab-ci.yml
   before_script:
     - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
   script:
@@ -45,10 +45,6 @@ image static games prod:
   image: registry.services.mts.ru/docker-ingame/kaniko:debug-v0.14.0
   only:
     - tags
-  except:
-    changes:
-      - '*.md'
-      - .gitlab-ci.yml
   before_script:
     - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
   script:
@@ -68,7 +64,7 @@ deploy static games dev:
   except:
     changes:
       - '*.md'
-      # - .gitlab-ci.yml
+      #- .gitlab-ci.yml
   script:
     - kubectl --record deployment.apps/games set image deployment.v1.apps/games games=$CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA -n development
     - kubectl -n development rollout restart deployment/games
@@ -85,7 +81,7 @@ deploy static games stage:
   except:
     changes:
       - '*.md'
-      - .gitlab-ci.yml
+      #- .gitlab-ci.yml
   script:
     - kubectl --record deployment.apps/games set image deployment.v1.apps/games games=$CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA -n ingame-stage
     - kubectl -n ingame-stage rollout restart deployment/games
@@ -98,10 +94,6 @@ deploy static games prod:
   when: on_success
   only:
     - tags
-  except:
-    changes:
-      - '*.md'
-      - .gitlab-ci.yml
   script:
     - kubectl --record deployment.apps/games set image deployment.v1.apps/games games=$CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME -n ingame-prod
     - kubectl -n ingame-prod rollout restart deployment/games
@@ -117,10 +109,6 @@ undo static games dev:
       - develop
       - test-build
       - experimental #for developers tests
-  except:
-    changes:
-      - '*.md'
-      # - .gitlab-ci.yml
   script:
     - kubectl rollout undo deployment.apps/games -n development
 
@@ -133,10 +121,6 @@ undo static games stage:
   only:
     refs:
       - master
-  except:
-    changes:
-      - '*.md'
-      - .gitlab-ci.yml
   script:
     - kubectl rollout undo deployment.apps/games -n ingame-stage
 
@@ -148,9 +132,5 @@ undo static games prod:
   when: manual
   only:
     - tags
-  except:
-    changes:
-      - '*.md'
-      - .gitlab-ci.yml
   script:
     - kubectl rollout undo deployment.apps/games -n ingame-prod
