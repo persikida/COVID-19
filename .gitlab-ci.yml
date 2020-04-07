@@ -23,7 +23,8 @@ image static games dev:
   before_script:
     - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
   script:
-    - executor --context $CI_PROJECT_DIR/ --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA
+    #Cache lifetime: 60 days
+    - executor --cache=true --verbosity=warn --context $CI_PROJECT_DIR/ --dockerfile $CI_PROJECT_DIR/Dockerfile --cache --cache-ttl 1440h --destination $CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA
 
 image static games stage:
   stage: image
@@ -36,9 +37,10 @@ image static games stage:
       - '*.md'
       #- .gitlab-ci.yml
   before_script:
+    #Cache lifetime: 60 days
     - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
   script:
-    - executor --context $CI_PROJECT_DIR/ --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA
+    - executor --cache=true --verbosity=warn --context $CI_PROJECT_DIR/ --dockerfile $CI_PROJECT_DIR/Dockerfile --cache --cache-ttl 1440h --destination $CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME-commit-$CI_COMMIT_SHORT_SHA
 
 image static games prod:
   stage: image
@@ -48,7 +50,7 @@ image static games prod:
   before_script:
     - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
   script:
-    - executor --context $CI_PROJECT_DIR/ --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME
+    - executor --cache=true --verbosity=warn --context $CI_PROJECT_DIR/ --dockerfile $CI_PROJECT_DIR/Dockerfile --cache --cache-ttl 1440h --destination $CI_REGISTRY_IMAGE:games-$CI_COMMIT_REF_NAME
 
 deploy static games dev:
   stage: deploy
