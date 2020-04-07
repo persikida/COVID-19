@@ -52,7 +52,7 @@ image static games prod:
 
 deploy static games dev:
   stage: deploy
-  image: lachlanevenson/k8s-kubectl:latest
+  image: registry.services.mts.ru/docker-ingame/k8s-kubectl:1.18.0
   extends: .deploy_dev
   stage: deploy
   when: on_success
@@ -71,7 +71,7 @@ deploy static games dev:
 
 deploy static games stage:
   stage: deploy
-  image: lachlanevenson/k8s-kubectl:latest
+  image: registry.services.mts.ru/docker-ingame/k8s-kubectl:1.18.0
   extends: .deploy_stage
   stage: deploy
   when: on_success
@@ -88,7 +88,7 @@ deploy static games stage:
 
 deploy static games prod:
   stage: deploy
-  image: lachlanevenson/k8s-kubectl:latest
+  image: registry.services.mts.ru/docker-ingame/k8s-kubectl:1.18.0
   extends: .deploy_prod
   stage: deploy
   when: on_success
@@ -100,7 +100,7 @@ deploy static games prod:
 
 undo static games dev:
   stage: undo
-  image: lachlanevenson/k8s-kubectl:latest
+  image: registry.services.mts.ru/docker-ingame/k8s-kubectl:1.18.0
   extends: .deploy_dev
   stage: undo
   when: manual
@@ -114,7 +114,7 @@ undo static games dev:
 
 undo static games stage:
   stage: undo
-  image: lachlanevenson/k8s-kubectl:latest
+  image: registry.services.mts.ru/docker-ingame/k8s-kubectl:1.18.0
   extends: .deploy_stage
   stage: undo
   when: manual
@@ -126,7 +126,7 @@ undo static games stage:
 
 undo static games prod:
   stage: undo
-  image: lachlanevenson/k8s-kubectl:latest
+  image: registry.services.mts.ru/docker-ingame/k8s-kubectl:1.18.0
   extends: .deploy_prod
   stage: undo
   when: manual
